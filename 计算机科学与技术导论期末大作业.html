@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算机科学与技术导论期末大作业</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    type="text/javascript"
+    src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+  ></script>
+  <style type="text/css">
+    #mynetwork {
+      width: 80%;
+      margin: 10px auto;
+      height: 700px;
+      border: 2px solid rgba(153, 152, 152, 0.705);
+    }
+  </style>
+</head>
+<div>
+    <header>
+        <div class="header public-width">
+            <div class="logo">
+                <h3>《计算机科学与技术导论》期末大作业</h3>
+            </div>
+            <div class="nav">
+                <a href="./参考资料.html">各课程参考资料</a>
+            </div>
+        </div>
+    </header>
+    <div id="mynetwork"></div>
+    <script type="text/javascript">
+        // create an array with nodes
+        var nodes = new vis.DataSet([
+          { id: 1, label: "汇编语言" },
+          { id: 2, label: "计算机科学技术导论" },
+          { id: 3, label: "面向对象程序设计" },
+          { id: 4, label: "Java语言程序设计" },
+          { id: 5, label: "数字信号处理" },
+          { id: 6, label: "软件定义网络" },
+          { id: 7, label: "计算机组成" },
+          { id: 8, label: "数据结构与算法" },
+          { id: 9, label: "人工智能" },
+          { id: 10, label: "数字图像处理与压缩编码技术" },
+          { id: 11, label: "认知计算与机器学习" },
+          { id: 12, label: "移动计算与服务" },
+          { id: 13, label: "计算机网络原理" },
+          { id: 14, label: "操作系统原理" },
+          { id: 15, label: "形式语言与编译" },
+          { id: 16, label: "计算机图形学" },
+          { id: 17, label: "算法分析与设计" },
+          { id: 18, label: "软件工程" },
+          { id: 19, label: "数据库系统" },
+          { id: 20, label: "网络信息与安全" },
+          { id: 21, label: "物联网应用概论" },
+          { id: 22, label: "嵌入式智能系统" },
+          { id: 23, label: "计算机动画与科学可视性" },
+          { id: 24, label: "数据库仓库与数据挖掘" },
+          { id: 25, label: "大数据分析系统" },
+          { id: 26, label: "计算机体系结构" },
+          { id: 27, label: "计算机接口技术" },
+        ]);
+  
+        // create an array with edges
+        var edges = new vis.DataSet([
+          { from: 1, to: 7 },
+          { from: 2, to: 8 },
+          { from: 3, to: 8 },
+          { from: 4, to: 8 },
+          { from: 5, to: 10 },
+          { from: 7, to: 13 },
+          { from: 7, to: 26 },
+          { from: 7, to: 27 },
+          { from: 7, to: 14 },
+          { from: 8, to: 14 },
+          { from: 8, to: 15 },
+          { from: 8, to: 16 },
+          { from: 8, to: 17 },
+          { from: 8, to: 18 },
+          { from: 8, to: 19 },
+          { from: 8, to: 9 },
+          { from: 9, to: 10 },
+          { from: 9, to: 11 },
+          { from: 13, to: 6 },
+          { from: 13, to: 12 },
+          { from: 13, to: 20 },
+          { from: 13, to: 21 },
+          { from: 14, to: 22 },
+          { from: 16, to: 23 },
+          { from: 19, to: 24 },
+          { from: 19, to: 25 },
+        ]);
+  
+        // create a network
+        var container = document.getElementById("mynetwork");
+        var data = {
+          nodes: nodes,
+          edges: edges,
+        };
+        var options = {};
+        var network = new vis.Network(container, data, options);
+      </script>
+    <div class="cognition">
+        <div class="public-width">
+            <div class="title">
+                <h4>对计算机专业的认识</h4>
+            </div>
+            <div class="text">
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp计算机专业是计算机硬件与软件相结合、面向系统、侧重应用的宽口径专业。通过基础教学与专业训练，培养基础知识扎实、知识面宽、工程实践能力强，具有开拓创新意识，在计算机科学与技术领域从事科学研究、教育、开发和应用的高级人才。 计算机学科的特色主要体现在：理论性强，实践性强，发展迅速按一级学科培养基础扎实的宽口径人才，体现在重视数学、逻辑、数据结构、算法、电子设计、计算机体系结构和系统软件等方面的理论基础和专业技术基础。计算机专业是一个注重实践以及逻辑分析能力的学科，他顺应时代发展，也注定他是一个更新迭代较快的行业，在这个行业中必须秉持终生学习的态度，不然很快就会被浪潮淹没。</p>
+            </div>
+        </div>
+    </div>
+    <div class="cognition">
+        <div class="public-width">
+            <div class="title">
+                <h4>学业规划</h4>
+            </div>
+            <div class="text">
+                <ul>
+                    <li>
+                        <p>认真听课，保证学习成绩优秀，认真学习专业知识和其他基础学科，注重提高自身的基本素质。</p>
+                    </li>
+                    <li>
+                        <p>打好基础，学好数据结构、计算机组成原理、操作系统、计算机网络以及数据库等基础课程，提高英语水平。</p>
+                    </li>
+                    <li>
+                        <p>积极参与各种计算机竞赛，参与创新项目，积累经验。</p>
+                    </li>
+                    <li>
+                        <p>积极与老师沟通交流，了解行业前沿技术与领域，熟悉本专业领域的社会和职业环境。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="name">
+            <p>2203322493&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp许佳欣</p>
+    </div>
+</body>
+</html>
